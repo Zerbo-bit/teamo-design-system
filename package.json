@@ -1,0 +1,17 @@
+{
+  "name": "teamo-ds",
+  "version": "1.0.0",
+  "description": "Teamo Design System — AI Agent 协作平台设计系统。Token、组件规范、AI 开发指令一键安装。",
+  "bin": {
+    "teamo-ds": "./cli/bin/index.js"
+  },
+  "files": [
+    "cli/",
+    "tokens/",
+    "docs/",
+    "icons/"
+  ],
+  "keywords": ["design-system", "design-tokens", "css-variables", "figma", "teamo", "ai-agent"],
+  "author": "teamo",
+  "license": "MIT"
+}

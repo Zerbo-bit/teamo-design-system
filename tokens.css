@@ -1,0 +1,204 @@
+/* ============================================
+   teamo Design Tokens
+   Auto-generated from Figma · 61 Colors + 23 Metrics
+   Collection: teamo Color System + teamo Metrics
+   ============================================ */
+
+/* ---- Light Mode (Default) ---- */
+:root {
+  /* Background */
+  --bg-canvas: #F7F7F7;
+  --bg-surface: #EFEFEF;
+  --bg-elevated: #DCDCDC;
+  --bg-hover: #DCDCDC;
+  --bg-subtle: #EFEFEF;
+  --bg-overlay: rgba(248, 250, 252, 0.80);
+  --bg-selected: #DCDCDC;
+  --bg-active: #C4C4C4;
+  --bg-raised: #F7F7F7;
+  --bg-glass: rgba(18, 18, 18, 0.60);
+  --bg-glass-subtle: rgba(245, 245, 245, 0.10);
+  --bg-input: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-base: #FFFFFF;
+  --bg-float: rgba(255, 255, 255, 0.85);
+  --bg-float-subtle: rgba(255, 255, 255, 0.28);
+  --bg-warning: #FCEDD6;
+  --bg-item-selected: #F7F7F8;
+
+  /* Text */
+  --text-primary: #121212;
+  --text-secondary: #525252;
+  --text-tertiary: #737373;
+  --text-disabled: #9E9E9E;
+  --text-inverse: #F7F7F7;
+  --text-link: #1C5BBF;
+  --text-link-hover: #0B4196;
+
+  /* Border */
+  --border-subtle: #DCDCDC;
+  --border-default: #C4C4C4;
+  --border-strong: #9E9E9E;
+  --border-focus: #121212;
+  --border-card: #DCDCDC;
+  --border-float: rgba(0, 0, 0, 0.10);
+
+  /* Icon */
+  --icon-primary: #121212;
+  --icon-secondary: #525252;
+  --icon-tertiary: #737373;
+  --icon-disabled: #9E9E9E;
+
+  /* Brand & Primary */
+  --color-brand-solid: #121212;
+  --color-brand-text: #F7F7F7;
+  --color-primary: #121212;
+  --color-primary-hover: #2A2A2A;
+  --color-primary-active: #3D3D3D;
+  --brand-qwen: #615CED;
+  --brand-gpt: #33A86E;
+
+  /* Status */
+  --color-success: #16A34A;
+  --color-success-text: #16A34A;
+  --color-success-bg: #F0FDF4;
+  --color-warning: #D97706;
+  --color-warning-bg: #FFFBEB;
+  --color-danger: #DC2626;
+  --color-danger-bg: #FEF2F2;
+
+  /* Badge */
+  --badge-web-bg: #E1EBFA;
+  --badge-web-text: #1C5BBF;
+  --badge-feishu-bg: #DCFCE7;
+  --badge-feishu-text: #15803D;
+  --badge-telegram-bg: #FEF3C7;
+  --badge-telegram-text: #B45309;
+  --chip-active-bg: #397CE8;
+  --chip-active-text: #FFFFFF;
+
+  /* Shadow */
+  --shadow-focus: rgba(0, 0, 0, 0.03);
+
+  /* Device (固定，不随主题切换) */
+  --device-frame: #121212;
+  --device-screen: #141414;
+  --device-border: #696969;
+
+  /* ---- Spacing ---- */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+
+  /* ---- Radius ---- */
+  --radius-xs: 6px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 999px;
+
+  /* ---- Stroke ---- */
+  --stroke-sm: 1px;
+  --stroke-md: 1px;
+
+  /* ---- Opacity ---- */
+  --opacity-hover: 0.08;
+  --opacity-active: 0.12;
+  --opacity-disabled: 0.40;
+
+  /* ---- Effect ---- */
+  --blur-surface: 24px;
+}
+
+/* ---- Dark Mode ---- */
+[data-theme="dark"] {
+  /* Background */
+  --bg-canvas: #121418;
+  --bg-surface: #191A1C;
+  --bg-elevated: #292A2D;
+  --bg-hover: #292A2D;
+  --bg-subtle: #191A1C;
+  --bg-overlay: rgba(18, 20, 24, 0.80);
+  --bg-selected: #505255;
+  --bg-active: #717377;
+  --bg-raised: #292A2D;
+  --bg-glass: rgba(247, 247, 247, 0.60);
+  --bg-glass-subtle: rgba(245, 245, 245, 0.10);
+  --bg-input: #191A1C;
+  --bg-card: #0C0C0C;
+  --bg-base: #050505;
+  --bg-float: rgba(22, 22, 22, 0.85);
+  --bg-float-subtle: rgba(12, 12, 12, 0.28);
+  --bg-warning: #21180D;
+  --bg-item-selected: #2E3033;
+
+  /* Text */
+  --text-primary: #F6F7F9;
+  --text-secondary: #9C9EA2;
+  --text-tertiary: #717377;
+  --text-disabled: #505255;
+  --text-inverse: #121418;
+  --text-link: #F6F7F9;
+  --text-link-hover: #C2C4C7;
+
+  /* Border */
+  --border-subtle: #3B3D40;
+  --border-default: #3B3D40;
+  --border-strong: #505255;
+  --border-focus: #F6F7F9;
+  --border-card: #282828;
+  --border-float: rgba(255, 255, 255, 0.10);
+
+  /* Icon */
+  --icon-primary: #F6F7F9;
+  --icon-secondary: #9C9EA2;
+  --icon-tertiary: #717377;
+  --icon-disabled: #505255;
+
+  /* Brand & Primary */
+  --color-brand-solid: #F6F7F9;
+  --color-brand-text: #121418;
+  --color-primary: #F6F7F9;
+  --color-primary-hover: #DBDCDF;
+  --color-primary-active: #C2C4C7;
+  --brand-qwen: #615CED;
+  --brand-gpt: #33A86E;
+
+  /* Status */
+  --color-success: #00C758;
+  --color-success-text: #30C855;
+  --color-success-bg: rgba(20, 83, 45, 0.20);
+  --color-warning: #F99C00;
+  --color-warning-bg: rgba(120, 53, 15, 0.20);
+  --color-danger: #F43B3E;
+  --color-danger-bg: rgba(127, 29, 29, 0.20);
+
+  /* Badge */
+  --badge-web-bg: #264080;
+  --badge-web-text: #6699FF;
+  --badge-feishu-bg: #1A4D33;
+  --badge-feishu-text: #4DCC80;
+  --badge-telegram-bg: #59331A;
+  --badge-telegram-text: #E5994D;
+  --chip-active-bg: #337BEE;
+  --chip-active-text: #FFFFFF;
+
+  /* Shadow */
+  --shadow-focus: rgba(255, 255, 255, 0.40);
+}
+
+/* ---- Dark Mode via prefers-color-scheme ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* 同上 dark 变量，可按需复制 */
+  }
+}
