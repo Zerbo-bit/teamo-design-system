@@ -2,6 +2,45 @@
 
 > AI Agent 协作平台的统一设计语言，适用于产品、研发、设计、运营全角色。
 
+## 一键安装
+
+```bash
+# 安装 Token + AI 规范到你的项目
+npx teamo-ds init
+
+# 完整安装（含图标 + 文档）
+npx teamo-ds init --full
+```
+
+**其他命令：**
+
+| 命令 | 作用 |
+|------|------|
+| `npx teamo-ds tokens` | 仅安装 tokens.css + tokens.json |
+| `npx teamo-ds ai` | 仅安装 CLAUDE.md（AI 开发规范） |
+| `npx teamo-ds info` | 查看 Token 速查表 |
+| `npx teamo-ds doctor` | 检查项目是否符合设计规范 |
+
+**或直接克隆：**
+
+```bash
+git clone https://github.com/Zerbo-bit/teamo-design-system.git
+```
+
+---
+
+## 数据概览
+
+| 指标 | 数量 |
+|------|------|
+| 组件集 | 37 |
+| 变体 | 609+ |
+| 设计变量 | 218 |
+| 图标 | 1666 |
+| 主题 | Light / Dark |
+| 语言 | EN / CN |
+| 平台 | PC + Mobile |
+
 ---
 
 ## 这个包里有什么
