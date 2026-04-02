@@ -2,6 +2,44 @@
 
 > AI Agent 协作平台的统一设计语言，适用于产品、研发、设计、运营全角色。
 
+## AI 驱动的设计系统
+
+Teamo Design System 不仅是一套传统的 Token + 组件库，更是一个 **AI-native 设计系统**——专为 AI 开发工具（Claude Code、Codex、Cursor）设计的自动化规范引擎。
+
+### 它能做什么
+
+**🤖 AI 自动遵循** — 项目中放入 `CLAUDE.md`，AI 生成代码时自动使用正确的颜色、字体、间距，不再需要人工纠正。
+
+**⚡ Skill 自动触发** — 内置 Claude Code Skill `/teamo`，当用户说"生成页面"、"写个组件"时自动激活，注入设计规范、检测 Token 安装状态、提供组件代码模板。
+
+**🩺 规范检查** — `teamo-ds doctor` 一键扫描项目，检测硬编码颜色、错误字体、缺失 Token 等问题。
+
+### 工作流程
+
+```
+用户: "帮我做一个登录页面"
+  ↓
+/teamo Skill 自动触发
+  ↓
+检测项目 → tokens.css 未安装 → 自动安装
+  ↓
+生成代码 → 强制使用 var(--token)、Geist Mono、PingFang SC
+  ↓
+Self-check → 7 项合规检查 → 交付
+```
+
+### 适用场景
+
+| 角色 | 怎么用 |
+|------|--------|
+| **前端研发** | `npx teamo-ds init` 安装 Token，用 `var()` 写样式，AI 自动遵循 |
+| **AI 开发者** | 复制 `CLAUDE.md` 到项目根目录，Claude/Codex 自动读取规范 |
+| **产品经理** | Figma 搜索组件名拖入使用，查 README 了解 Token 含义 |
+| **设计师** | 使用 Figma Variable 绑定，组件属性面板切换样式 |
+| **运营** | 查看 Token 速查表，理解颜色/间距含义 |
+
+---
+
 ## 一键安装
 
 ```bash
