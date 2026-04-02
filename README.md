@@ -2,40 +2,27 @@
 
 > AI Agent 协作平台的统一设计语言，适用于产品、研发、设计、运营全角色。
 
-## 搭配 Claude Code Skill 使用
+## 搭配 Agentation Skill 使用
 
-本设计系统提供了一个 **Claude Code Skill** (`/teamo`)，安装后 AI 生成 HTML/CSS 时会自动遵循设计规范。
+本设计系统提供了一个 [Agentation](https://www.agentation.com/) Skill，安装后 AI 生成 HTML/CSS 时会自动遵循设计规范。
 
-### 安装 Skill
+### 安装
 
-将 `skill/` 目录复制到你的 Claude Code skills 路径：
+在 [agentation.com](https://www.agentation.com/) 搜索 **teamo** 并安装，或手动添加：
 
 ```bash
-cp -r teamo-design-system/skill/ ~/.claude/skills/teamo/
+# 将 skill/SKILL.md 添加到你的 Agentation skills
 ```
-
-或手动将 `skill/SKILL.md` 复制到 `~/.claude/skills/teamo/SKILL.md`。
 
 ### 使用方法
 
-**方法 1 — 手动调用：**
-
-在 Claude Code 中输入 `/teamo`，然后描述你要做的页面：
+安装 Skill 后，在 Claude Code 中直接描述你的需求：
 
 ```
-/teamo 帮我做一个登录页面
+帮我做一个登录页面
 ```
 
-**方法 2 — 自动触发：**
-
-只要你的项目中存在 `tokens.css`，当你对 Claude Code 说以下内容时会自动触发：
-
-- "生成一个 HTML 页面"
-- "写一个卡片组件"
-- "做一个 dashboard"
-- "用 teamo 风格做..."
-
-### 它会自动做什么
+Skill 会自动：
 
 1. **检测** 项目是否已安装 `tokens.css`，没有则自动安装
 2. **强制** 使用 `var(--token-name)` 颜色变量，不硬编码 hex 色值
@@ -44,9 +31,9 @@ cp -r teamo-design-system/skill/ ~/.claude/skills/teamo/
 5. **提供** Button / Card / Input / Tag 等标准组件代码模板
 6. **自检** 生成后执行 7 项合规检查，不合格自动修复
 
-### 示例效果
+### 对比效果
 
-**不用 Skill：** AI 可能生成 `background: #f5f5f5; font-family: Arial;`
+**不用 Skill：** AI 生成 `background: #f5f5f5; font-family: Arial;`
 
 **用了 Skill：** AI 生成 `background: var(--bg-canvas); font-family: 'Geist Mono', monospace;`
 
