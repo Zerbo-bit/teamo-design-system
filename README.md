@@ -2,40 +2,31 @@
 
 > AI Agent 协作平台的统一设计语言，适用于产品、研发、设计、运营全角色。
 
-## 搭配 Agentation Skill 使用
+## 搭配 Agentation 修改页面细节
 
-本设计系统提供了一个 [Agentation](https://www.agentation.com/) Skill，安装后 AI 生成 HTML/CSS 时会自动遵循设计规范。
+不会写代码？不知道怎么跟 AI 描述页面修改需求？用 [Agentation](https://www.agentation.com/) 帮你搞定。
 
-### 安装
+### 什么是 Agentation
 
-在 [agentation.com](https://www.agentation.com/) 搜索 **teamo** 并安装，或手动添加：
+Agentation 是一个可视化的页面修改工具。你不需要懂代码，只需要：
 
-```bash
-# 将 skill/SKILL.md 添加到你的 Agentation skills
-```
+1. **点击** — 在页面上点击你想修改的元素（按钮、文字、间距…）
+2. **定位** — 工具自动定位到对应的代码位置
+3. **描述** — 用中文写你想要的改动（"把这个按钮改成圆角"、"间距大一点"）
+4. **复制** — 一键复制生成的修改指令
+5. **粘贴给 Claude Code** — AI 精准执行修改
 
-### 使用方法
+### 使用场景
 
-安装 Skill 后，在 Claude Code 中直接描述你的需求：
+| 你想做的 | 以前怎么做 | 用 Agentation |
+|----------|-----------|---------------|
+| 改个按钮颜色 | 翻代码找半天，不知道改哪行 | 点击按钮 → 自动定位 → 描述修改 → 复制给 CC |
+| 调整间距 | 猜 class 名，反复试 | 点击区域 → 看到当前间距 → 写"改成 16px" → 完成 |
+| 换个字体大小 | 在 DevTools 里找元素 | 点击文字 → 描述"大一号" → 复制指令 → 精准修改 |
 
-```
-帮我做一个登录页面
-```
+### 开始使用
 
-Skill 会自动：
-
-1. **检测** 项目是否已安装 `tokens.css`，没有则自动安装
-2. **强制** 使用 `var(--token-name)` 颜色变量，不硬编码 hex 色值
-3. **强制** 使用 `Geist Mono`（英文）/ `PingFang SC`（中文）字体
-4. **强制** 使用 `--space-*` 间距和 `--radius-*` 圆角 Token
-5. **提供** Button / Card / Input / Tag 等标准组件代码模板
-6. **自检** 生成后执行 7 项合规检查，不合格自动修复
-
-### 对比效果
-
-**不用 Skill：** AI 生成 `background: #f5f5f5; font-family: Arial;`
-
-**用了 Skill：** AI 生成 `background: var(--bg-canvas); font-family: 'Geist Mono', monospace;`
+前往 [agentation.com](https://www.agentation.com/) 安装，配合本设计系统的 Token 使用效果更佳。
 
 ---
 
